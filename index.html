@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>MRN Player</title>
+<link rel="stylesheet" href="style.css" />
+<script src="https://cdn.plyr.io/3.7.8/plyr.polyfilled.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+</head>
+<body>
+
+<div class="container">
+    <video class="player" controls crossorigin playsinline>
+        <source src="" type="video/mp4" />
+    </video>
+
+    <div class="file-info">Streaming in HD</div>
+    <div class="disclaimer">Unauthorized reproduction is prohibited.</div>
+
+    <div class="action-buttons">
+        <button onclick="vlc_player()">VLC</button>
+        <button onclick="mx_player()">MX</button>
+        <button onclick="playit_player()">PlayIt</button>
+        <button onclick="Download()">Download</button>
+        <button class="copy" onclick="copy_url()">Copy URL</button>
+        <button onclick="shareButton()">Share</button>
+    </div>
+
+    <div id="messagePopup" class="popup"></div>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
